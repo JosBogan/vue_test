@@ -1,18 +1,20 @@
 <template>
   <div id="app">
-    {{ message }}
-    <HelloWorld v-bind:msg='second' />
+      <TopNavbar />
+      <main class="main_container">
+        <router-view></router-view>
+      </main>
   </div>
 </template>
 
 <script>
 
-import HelloWorld from './components/HelloWorld'
+import TopNavbar from './components/TopNavbar'
 
 export default {
-  name: 'fds',
+  name: 'app',
   components: {
-    HelloWorld
+    TopNavbar
   },
   data() {
     return {
@@ -25,19 +27,23 @@ export default {
 
 <style>
 
-* {
+  * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-#app {
+  #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
+
+  .main_container {
+    min-height: 100vh;
+    background-color: #2c3e50;
+    padding-top: 60px;
+  }
 
 </style>
