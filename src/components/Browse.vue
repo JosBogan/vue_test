@@ -1,9 +1,9 @@
 <template>
-  <div> 
-    {{console.log(data)}}
-    <!-- <div v-for="art in data" :key="art.name">
-    <div>{{art.name}}</div>
-    </div> -->
+  <div class="browse_container"> 
+    <!-- {{console.log(state.data)}} -->cd
+    <div v-for="art in data" :key="art.name">
+    <div>{{art.name}}dfsa</div>
+    </div>
   </div>
 </template>
 
@@ -14,12 +14,14 @@ import data from '../assets/data'
 
   export default {
     name: 'Browse',
-    state: {
-      data
-    }
+    props: [data]
   }
 </script>
 
 <style lang="scss" scoped>
+
+.browse_container {
+    color: whitesmoke;
+}
 
 </style>
