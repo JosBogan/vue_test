@@ -1,20 +1,21 @@
 <template>
   <div class="browse_container"> 
-    <!-- {{console.log(state.data)}} -->cd
-    <div v-for="art in data" :key="art.name">
+    <!-- {{data}} -->
+    <!-- <div v-for="art in data" :key="art.name">
     <div>{{art.name}}dfsa</div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
 
-import data from '../assets/data'
-// console.log(data)
+// import data from '../assets/data'
 
   export default {
     name: 'Browse',
-    props: [data]
+    // state: {
+    //   data
+    // }
   }
 </script>
 

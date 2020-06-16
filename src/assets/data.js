@@ -1,5 +1,4 @@
-export default {
-  data: [
+export default [
     {
       name: 'Wonderland',
       user: 'Alice',
@@ -72,4 +71,3 @@ export default {
     }, 
 
   ]
-}
