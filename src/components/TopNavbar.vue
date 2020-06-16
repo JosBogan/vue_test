@@ -47,6 +47,7 @@ import NavButton from './micro/NavButton'
     position: fixed;
     border-bottom: 1px solid whitesmoke;
     /* top: 0; */
+    z-index: 2;
     .button_container {
       display: flex;
     }
