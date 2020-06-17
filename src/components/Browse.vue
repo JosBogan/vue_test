@@ -2,7 +2,7 @@
   <div class="browse_container"> 
     <Container 
       v-for="art in data" 
-      v-bind:key="art.name"
+      v-bind:key="art.id"
       v-bind:data="art"
     />
   </div>

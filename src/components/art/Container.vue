@@ -6,7 +6,6 @@
     <div 
       class="artwork_overlay"
       @mouseenter="mouseE"
-      v-bind:class="{ invis: active }"
     >
       <div class="artwork_overlay_inner">
         <div>{{data.name}}</div>
@@ -61,7 +60,7 @@
   display: flex;
   flex-direction: column;
   // z-index: 1;
-  display: none;
+  // display: none;
 
 }
 
