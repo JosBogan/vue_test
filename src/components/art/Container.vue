@@ -60,8 +60,7 @@
   display: flex;
   flex-direction: column;
   // z-index: 1;
-  // display: none;
-
+  display: none;
 }
 
 .artwork_overlay_inner {
